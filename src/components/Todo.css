@@ -17,18 +17,15 @@ h3,
 h4,
 h5,
 h6,
-div,
-p,
-span {
-  color: black;
+div {
+  color: rgb(107, 116, 231);
   font-family: 'Roboto', sans-serif;
 }
 
 .App {
   font-family: sans-serif;
   text-align: center;
-  padding: 0 36px;
-  max-width: 665px;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -36,28 +33,30 @@ span {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 2px dashed blue;
+  margin-bottom: 2vh;
 }
 h1 {
   text-align: left;
   font-size: 2.5rem;
+  font-weight: bold;
 }
 
 .todo-list {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: column;
   justify-content: space-between;
   width: 100%;
   margin: 0 auto;
 }
 .item {
   background-color: rgb(107, 116, 231);
-  width: 45%;
-  text-align: left;
-  margin: 4px 0;
-  padding: 2px;
+  width: 100%;
+  margin: 2vh auto;
   cursor: pointer;
-  text-align: center;
   border-radius: 15px;
+  color: white;
+  font-size: 1.25rem;
   border: solid blue 2px;
 }
 
@@ -66,7 +65,7 @@ h1 {
   text-decoration: line-through;
 }
 form {
-  width: 50%;
+  width: 60%;
   display: flex;
   justify-content: flex-end;
 }
@@ -75,24 +74,32 @@ form > input {
   border: 0;
   padding: 6px 0;
   font-size: 1rem;
-  width: 240px;
+  width: 100%;
   outline: 0;
   color: black;
   border-bottom: 1px solid blue;
   margin-right: 8px;
 }
 
-button {
-  background-color: rgb(107, 116, 231);
-  border: 2px solid blue;
-  width: 30%;
-  height: 5vh;
-  color: white;
-  font-size: 16px;
-  padding: 6px 14px;
-  margin: 0 auto;
+.add-btn {
+    background-color: rgb(107, 116, 231);
+    width:30%;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid blue;
 }
 
 .clear-btn {
-  margin-top: 16px;
+    background-color: rgb(107, 116, 231);
+    width: 40%;
+    height: 6vh;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin: 2vh auto;
+    padding: 2vh auto;
+    border-radius: 15px;
+    border: 2px solid blue;
 }

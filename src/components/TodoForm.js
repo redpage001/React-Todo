@@ -28,7 +28,7 @@ class ListForm extends React.Component {
           name="item"
           onChange={this.handleChanges}
         />
-        <button>Add</button>
+        <button className="add-btn">Add</button>
       </form>
     );
   }
